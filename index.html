@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1 Act 4 | Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <section class="login-card">
+      <div class="brand-mark">UTCH BIS</div>
+      <p class="eyebrow">UNIT 1 • ACTIVITY 4</p>
+      <h1>Welcome back</h1>
+      <p class="subtitle">Sign in to access the practices created during Unit 1.</p>
+
+      <form id="loginForm" class="login-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" placeholder="Enter username" required>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter password" required>
+
+        <button type="submit" class="primary-button">Sign in</button>
+        <p id="loginMessage" class="form-message" role="alert"></p>
+      </form>
+
+      <div class="tooltip-box">
+        <button type="button" class="tooltip-trigger" aria-describedby="authTip">ⓘ How does authentication work?</button>
+        <div id="authTip" class="tooltip-content">
+          This website uses JWT authentication. After valid credentials are submitted, the server creates a signed JSON Web Token and stores it in an HttpOnly cookie. Protected pages check that cookie before allowing access. If the user is not authenticated, the request is redirected to this Login page.
+        </div>
+      </div>
+
+      <div class="demo-box">
+        <strong>Demo credentials</strong>
+        <span>Username: <code>student</code></span>
+        <span>Password: <code>unit1act4</code></span>
+      </div>
+    </section>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>

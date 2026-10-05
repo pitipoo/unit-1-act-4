@@ -1,0 +1,9 @@
+{
+  "name": "unit-1-act-4-authenticated-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UTCH BIS Unit 1 Activity 4 - authenticated integration of previous web practices",
+  "engines": {
+    "node": "22.x"
+  }
+}

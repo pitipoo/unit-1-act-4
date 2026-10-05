@@ -1,0 +1,54 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #172033;
+  background: #eef2f7;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+.login-page {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #e9eef7 0%, #f8fafc 55%, #e6ebf3 100%);
+}
+.login-shell { width: min(100%, 480px); }
+.login-card {
+  background: #fff;
+  border: 1px solid #dfe5ee;
+  border-radius: 22px;
+  padding: 38px;
+  box-shadow: 0 20px 60px rgba(20, 32, 55, .12);
+}
+.brand-mark {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #172033;
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+.eyebrow { margin: 24px 0 8px; font-size: 12px; font-weight: 800; letter-spacing: .12em; color: #6b7280; }
+h1 { margin: 0 0 10px; font-size: 36px; }
+.subtitle { margin: 0 0 28px; color: #667085; line-height: 1.6; }
+.login-form { display: grid; gap: 10px; }
+.login-form label { font-size: 14px; font-weight: 700; margin-top: 6px; }
+.login-form input {
+  width: 100%; padding: 13px 14px; border: 1px solid #cfd7e3; border-radius: 10px; font-size: 15px; outline: none;
+}
+.login-form input:focus { border-color: #172033; box-shadow: 0 0 0 3px rgba(23, 32, 51, .08); }
+.primary-button {
+  border: 0; border-radius: 10px; padding: 14px; margin-top: 12px; background: #172033; color: #fff; font-weight: 800; cursor: pointer;
+}
+.primary-button:hover { opacity: .92; }
+.form-message { min-height: 20px; margin: 4px 0 0; color: #b42318; font-size: 14px; }
+.tooltip-box { position: relative; margin-top: 24px; }
+.tooltip-trigger { border: 0; background: transparent; padding: 0; color: #344054; font-weight: 700; cursor: help; }
+.tooltip-content {
+  display: none; margin-top: 10px; padding: 14px; border-radius: 12px; background: #172033; color: white; line-height: 1.55; font-size: 13px;
+}
+.tooltip-box:hover .tooltip-content, .tooltip-box:focus-within .tooltip-content { display: block; }
+.demo-box { display: grid; gap: 5px; margin-top: 22px; padding: 14px; border-radius: 12px; background: #f5f7fa; color: #475467; font-size: 13px; }
+code { background: #e8ecf2; padding: 2px 5px; border-radius: 5px; }
+@media (max-width: 520px) { .login-card { padding: 26px; } h1 { font-size: 30px; } }
